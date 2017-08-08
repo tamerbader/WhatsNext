@@ -1,2 +1,2 @@
-r# WhatsNext
-A modern to do app
+# WhatsNext
+A modern to-do app
