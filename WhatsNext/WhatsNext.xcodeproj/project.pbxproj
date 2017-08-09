@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		59AE14581F3AB04F0011E542 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AE14571F3AB04F0011E542 /* UIColor.swift */; };
+		59AE145B1F3ABF020011E542 /* MainPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AE145A1F3ABF020011E542 /* MainPageController.swift */; };
 		59C3CD231F3A845200ED374E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C3CD221F3A845200ED374E /* AppDelegate.swift */; };
 		59C3CD281F3A845200ED374E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59C3CD261F3A845200ED374E /* Main.storyboard */; };
 		59C3CD2B1F3A845200ED374E /* WhatsNext.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 59C3CD291F3A845200ED374E /* WhatsNext.xcdatamodeld */; };
@@ -37,6 +38,7 @@
 
 /* Begin PBXFileReference section */
 		59AE14571F3AB04F0011E542 /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		59AE145A1F3ABF020011E542 /* MainPageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPageController.swift; sourceTree = "<group>"; };
 		59C3CD1F1F3A845200ED374E /* WhatsNext.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhatsNext.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59C3CD221F3A845200ED374E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		59C3CD271F3A845200ED374E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				59C3CD531F3A854A00ED374E /* LoginViewController.swift */,
+				59AE145A1F3ABF020011E542 /* MainPageController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59AE145B1F3ABF020011E542 /* MainPageController.swift in Sources */,
 				59C3CD541F3A854A00ED374E /* LoginViewController.swift in Sources */,
 				59AE14581F3AB04F0011E542 /* UIColor.swift in Sources */,
 				59C3CD2B1F3A845200ED374E /* WhatsNext.xcdatamodeld in Sources */,
