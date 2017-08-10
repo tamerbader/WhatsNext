@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainPageController" customModule="WhatsNext" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="taskCell" rowHeight="118" id="ie1-Ok-yBp" customClass="TaskCell" customModule="WhatsNext" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="433" height="118"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ie1-Ok-yBp" id="kXq-he-p3w">
+                <rect key="frame" x="0.0" y="0.0" width="433" height="117.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z3c-jB-1Qq">
+                        <rect key="frame" x="18" y="23.5" width="397" height="70.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meeting with Janet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IdL-bY-ZCb">
+                                <rect key="frame" x="0.0" y="0.0" width="357.5" height="35"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ukh-aM-ZsB">
+                                <rect key="frame" x="0.0" y="35" width="357.5" height="35.5"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="group" translatesAutoresizingMaskIntoConstraints="NO" id="Hun-2v-WEE">
+                                        <rect key="frame" x="0.0" y="11" width="14" height="13.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="Hun-2v-WEE" secondAttribute="height" multiplier="1:1" id="yle-7R-6sF"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jw6-lX-ZZq">
+                                        <rect key="frame" x="24" y="0.0" width="333.5" height="35.5"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="10"/>
+                                        <color key="textColor" red="0.1137254902" green="0.1137254902" blue="0.14901960780000001" alpha="0.5" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="Hun-2v-WEE" firstAttribute="leading" secondItem="ukh-aM-ZsB" secondAttribute="leading" id="5lL-KE-w8Q"/>
+                                    <constraint firstItem="Hun-2v-WEE" firstAttribute="width" secondItem="ukh-aM-ZsB" secondAttribute="width" multiplier="0.04" id="9Ob-GQ-XeF"/>
+                                    <constraint firstItem="Jw6-lX-ZZq" firstAttribute="leading" secondItem="Hun-2v-WEE" secondAttribute="trailing" constant="10" id="9jS-Lh-bBB"/>
+                                    <constraint firstItem="Hun-2v-WEE" firstAttribute="centerY" secondItem="ukh-aM-ZsB" secondAttribute="centerY" id="N1x-MQ-kNo"/>
+                                    <constraint firstItem="Jw6-lX-ZZq" firstAttribute="top" secondItem="ukh-aM-ZsB" secondAttribute="top" id="cD6-Vg-nUU"/>
+                                    <constraint firstAttribute="bottom" secondItem="Jw6-lX-ZZq" secondAttribute="bottom" id="zQP-bQ-lcT"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ukh-aM-ZsB" firstAttribute="top" secondItem="IdL-bY-ZCb" secondAttribute="bottom" id="0ee-FX-w4Z"/>
+                            <constraint firstItem="Jw6-lX-ZZq" firstAttribute="trailing" secondItem="IdL-bY-ZCb" secondAttribute="trailing" id="2P4-9V-pMU"/>
+                            <constraint firstItem="ukh-aM-ZsB" firstAttribute="leading" secondItem="Z3c-jB-1Qq" secondAttribute="leading" id="651-C3-nG1"/>
+                            <constraint firstItem="IdL-bY-ZCb" firstAttribute="width" secondItem="Z3c-jB-1Qq" secondAttribute="width" multiplier="0.9" id="Cdl-od-wWp"/>
+                            <constraint firstItem="IdL-bY-ZCb" firstAttribute="top" secondItem="Z3c-jB-1Qq" secondAttribute="top" id="M9X-24-e1K"/>
+                            <constraint firstItem="IdL-bY-ZCb" firstAttribute="leading" secondItem="Z3c-jB-1Qq" secondAttribute="leading" id="U1N-im-OW5"/>
+                            <constraint firstItem="ukh-aM-ZsB" firstAttribute="trailing" secondItem="IdL-bY-ZCb" secondAttribute="trailing" id="nqO-rP-Vvg"/>
+                            <constraint firstItem="ukh-aM-ZsB" firstAttribute="height" secondItem="Z3c-jB-1Qq" secondAttribute="height" multiplier="0.5" id="vD5-ni-YS7"/>
+                            <constraint firstAttribute="bottom" secondItem="ukh-aM-ZsB" secondAttribute="bottom" id="xDl-Ec-rQ5"/>
+                        </constraints>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileImage" translatesAutoresizingMaskIntoConstraints="NO" id="Tfx-ro-RSJ">
+                        <rect key="frame" x="403.5" y="48" width="21.5" height="21.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="Tfx-ro-RSJ" secondAttribute="height" multiplier="1:1" id="sq3-ke-nOZ"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Z3c-jB-1Qq" firstAttribute="centerY" secondItem="kXq-he-p3w" secondAttribute="centerY" id="7Jt-2d-yjd"/>
+                    <constraint firstItem="Tfx-ro-RSJ" firstAttribute="centerY" secondItem="kXq-he-p3w" secondAttribute="centerY" id="KlO-Nb-gpg"/>
+                    <constraint firstItem="Tfx-ro-RSJ" firstAttribute="width" secondItem="kXq-he-p3w" secondAttribute="width" multiplier="0.05" id="S9k-6C-asa"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Tfx-ro-RSJ" secondAttribute="trailing" id="Tyb-Ro-Aob"/>
+                    <constraint firstItem="Z3c-jB-1Qq" firstAttribute="leading" secondItem="kXq-he-p3w" secondAttribute="leadingMargin" constant="10" id="U4U-Op-IlQ"/>
+                    <constraint firstItem="Z3c-jB-1Qq" firstAttribute="height" secondItem="kXq-he-p3w" secondAttribute="height" multiplier="0.6" id="jXB-PM-rqy"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Z3c-jB-1Qq" secondAttribute="trailing" constant="10" id="mFt-h6-ocZ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="taskName" destination="IdL-bY-ZCb" id="pnE-xG-pAS"/>
+                <outlet property="taskTime" destination="Jw6-lX-ZZq" id="CjV-QJ-P0l"/>
+                <outlet property="userImage" destination="Tfx-ro-RSJ" id="x5L-9Q-CLY"/>
+            </connections>
+            <point key="canvasLocation" x="169.5" y="121"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="group" width="90" height="93"/>
+        <image name="profileImage" width="180" height="183"/>
+    </resources>
+</document>

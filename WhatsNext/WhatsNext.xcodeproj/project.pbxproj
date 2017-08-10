@@ -7,9 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5946DA6E1F3BC3FA00196A87 /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5946DA6D1F3BC3FA00196A87 /* Day.swift */; };
+		5946DA701F3BC46300196A87 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5946DA6F1F3BC46300196A87 /* Task.swift */; };
+		5946DA721F3BD64B00196A87 /* AppDefs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5946DA711F3BD64B00196A87 /* AppDefs.swift */; };
 		59AE14581F3AB04F0011E542 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AE14571F3AB04F0011E542 /* UIColor.swift */; };
 		59AE145B1F3ABF020011E542 /* MainPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AE145A1F3ABF020011E542 /* MainPageController.swift */; };
 		59AE145E1F3AC6B90011E542 /* DayPickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AE145D1F3AC6B90011E542 /* DayPickerCell.swift */; };
+		59AE14601F3B67FE0011E542 /* TaskCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59AE145F1F3B67FE0011E542 /* TaskCell.xib */; };
+		59AE14621F3B6BAA0011E542 /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AE14611F3B6BAA0011E542 /* TaskCell.swift */; };
 		59C3CD231F3A845200ED374E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C3CD221F3A845200ED374E /* AppDelegate.swift */; };
 		59C3CD281F3A845200ED374E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59C3CD261F3A845200ED374E /* Main.storyboard */; };
 		59C3CD2B1F3A845200ED374E /* WhatsNext.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 59C3CD291F3A845200ED374E /* WhatsNext.xcdatamodeld */; };
@@ -38,9 +43,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5946DA6D1F3BC3FA00196A87 /* Day.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Day.swift; sourceTree = "<group>"; };
+		5946DA6F1F3BC46300196A87 /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		5946DA711F3BD64B00196A87 /* AppDefs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDefs.swift; sourceTree = "<group>"; };
 		59AE14571F3AB04F0011E542 /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		59AE145A1F3ABF020011E542 /* MainPageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPageController.swift; sourceTree = "<group>"; };
 		59AE145D1F3AC6B90011E542 /* DayPickerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayPickerCell.swift; sourceTree = "<group>"; };
+		59AE145F1F3B67FE0011E542 /* TaskCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TaskCell.xib; sourceTree = "<group>"; };
+		59AE14611F3B6BAA0011E542 /* TaskCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskCell.swift; sourceTree = "<group>"; };
 		59C3CD1F1F3A845200ED374E /* WhatsNext.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhatsNext.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59C3CD221F3A845200ED374E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		59C3CD271F3A845200ED374E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -86,6 +96,8 @@
 			isa = PBXGroup;
 			children = (
 				59AE145D1F3AC6B90011E542 /* DayPickerCell.swift */,
+				59AE145F1F3B67FE0011E542 /* TaskCell.xib */,
+				59AE14611F3B6BAA0011E542 /* TaskCell.swift */,
 			);
 			name = CollectionViewCells;
 			sourceTree = "<group>";
@@ -122,6 +134,9 @@
 				59C3CD311F3A845200ED374E /* Info.plist */,
 				59C3CD291F3A845200ED374E /* WhatsNext.xcdatamodeld */,
 				59AE14571F3AB04F0011E542 /* UIColor.swift */,
+				5946DA6D1F3BC3FA00196A87 /* Day.swift */,
+				5946DA6F1F3BC46300196A87 /* Task.swift */,
+				5946DA711F3BD64B00196A87 /* AppDefs.swift */,
 			);
 			path = WhatsNext;
 			sourceTree = "<group>";
@@ -261,6 +276,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59AE14601F3B67FE0011E542 /* TaskCell.xib in Resources */,
 				59C3CD301F3A845200ED374E /* LaunchScreen.storyboard in Resources */,
 				59C3CD2D1F3A845200ED374E /* Assets.xcassets in Resources */,
 				59C3CD281F3A845200ED374E /* Main.storyboard in Resources */,
@@ -289,10 +305,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				59AE145B1F3ABF020011E542 /* MainPageController.swift in Sources */,
+				59AE14621F3B6BAA0011E542 /* TaskCell.swift in Sources */,
+				5946DA6E1F3BC3FA00196A87 /* Day.swift in Sources */,
+				5946DA721F3BD64B00196A87 /* AppDefs.swift in Sources */,
 				59C3CD541F3A854A00ED374E /* LoginViewController.swift in Sources */,
 				59AE14581F3AB04F0011E542 /* UIColor.swift in Sources */,
 				59C3CD2B1F3A845200ED374E /* WhatsNext.xcdatamodeld in Sources */,
 				59AE145E1F3AC6B90011E542 /* DayPickerCell.swift in Sources */,
+				5946DA701F3BC46300196A87 /* Task.swift in Sources */,
 				59C3CD231F3A845200ED374E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

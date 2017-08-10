@@ -258,8 +258,11 @@
                                             <constraint firstAttribute="width" secondItem="a8J-Ju-GJG" secondAttribute="height" multiplier="20:11" id="aP2-LK-Hno"/>
                                         </constraints>
                                         <state key="normal" image="down (1)"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uyR-Zb-ccQ">
+                                        <rect key="frame" x="37" y="0.0" width="245.5" height="57"/>
                                         <connections>
-                                            <action selector="dropCalendar:" destination="Hcd-9J-N3X" eventType="touchUpInside" id="WJm-5n-U0q"/>
+                                            <action selector="dropCalendar:" destination="Hcd-9J-N3X" eventType="touchUpInside" id="t68-NX-wE8"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -273,10 +276,14 @@
                                     <constraint firstAttribute="bottom" secondItem="z21-Y3-LPV" secondAttribute="bottom" id="L4a-eC-RJF"/>
                                     <constraint firstAttribute="trailing" secondItem="QVb-Yx-trp" secondAttribute="trailing" constant="20" id="SRG-CF-1Fi"/>
                                     <constraint firstItem="a8J-Ju-GJG" firstAttribute="trailing" secondItem="z21-Y3-LPV" secondAttribute="trailing" constant="-20" id="TDp-Pl-4aN"/>
+                                    <constraint firstItem="z21-Y3-LPV" firstAttribute="bottom" secondItem="uyR-Zb-ccQ" secondAttribute="bottom" id="aQ1-zL-cIn"/>
                                     <constraint firstItem="RCR-mu-LFh" firstAttribute="centerY" secondItem="t8L-tU-j7c" secondAttribute="centerY" id="gfr-Nb-wnY"/>
+                                    <constraint firstItem="uyR-Zb-ccQ" firstAttribute="leading" secondItem="z21-Y3-LPV" secondAttribute="leading" id="h7z-OM-vza"/>
+                                    <constraint firstItem="uyR-Zb-ccQ" firstAttribute="trailing" secondItem="z21-Y3-LPV" secondAttribute="trailing" id="hRO-2Z-Gfx"/>
                                     <constraint firstItem="QVb-Yx-trp" firstAttribute="height" secondItem="t8L-tU-j7c" secondAttribute="height" multiplier="0.3" id="ifO-gc-7fa"/>
                                     <constraint firstItem="QVb-Yx-trp" firstAttribute="centerY" secondItem="t8L-tU-j7c" secondAttribute="centerY" id="ngZ-Hf-Yt2"/>
                                     <constraint firstItem="z21-Y3-LPV" firstAttribute="top" secondItem="t8L-tU-j7c" secondAttribute="top" id="r0e-PD-D2L"/>
+                                    <constraint firstItem="z21-Y3-LPV" firstAttribute="top" secondItem="uyR-Zb-ccQ" secondAttribute="top" id="r93-zw-ZVh"/>
                                     <constraint firstItem="QVb-Yx-trp" firstAttribute="leading" secondItem="z21-Y3-LPV" secondAttribute="trailing" id="yEb-bY-Eg8"/>
                                 </constraints>
                             </view>
@@ -404,21 +411,29 @@
                                     <constraint firstAttribute="height" id="3n0-IZ-YMX"/>
                                 </constraints>
                             </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="u7K-3E-2tq">
+                                <rect key="frame" x="16" y="354" width="288" height="214"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="t8L-tU-j7c" firstAttribute="height" secondItem="iDu-jk-HBn" secondAttribute="height" multiplier="0.1" id="0IT-L6-Pww"/>
+                            <constraint firstItem="u7K-3E-2tq" firstAttribute="leading" secondItem="iDu-jk-HBn" secondAttribute="leadingMargin" id="9QX-w3-R0j"/>
                             <constraint firstItem="t8L-tU-j7c" firstAttribute="leading" secondItem="iDu-jk-HBn" secondAttribute="leading" id="9oG-gY-ldM"/>
                             <constraint firstAttribute="trailing" secondItem="4PS-Dg-iNS" secondAttribute="trailing" id="9oI-Za-LAm"/>
                             <constraint firstItem="4PS-Dg-iNS" firstAttribute="leading" secondItem="iDu-jk-HBn" secondAttribute="leading" id="AL5-f8-Wud"/>
                             <constraint firstAttribute="trailing" secondItem="t8L-tU-j7c" secondAttribute="trailing" id="AQs-Wo-oKu"/>
                             <constraint firstItem="sVN-vj-dNd" firstAttribute="leading" secondItem="iDu-jk-HBn" secondAttribute="leading" id="EXT-pd-EFr"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="u7K-3E-2tq" secondAttribute="trailing" id="L2V-gO-SV6"/>
                             <constraint firstItem="t8L-tU-j7c" firstAttribute="top" secondItem="rbo-iU-aGa" secondAttribute="bottom" id="NR1-aO-HCZ"/>
                             <constraint firstItem="umP-Wr-VhT" firstAttribute="top" secondItem="4PS-Dg-iNS" secondAttribute="bottom" id="Qud-bl-81u"/>
                             <constraint firstItem="umP-Wr-VhT" firstAttribute="height" secondItem="iDu-jk-HBn" secondAttribute="height" multiplier="0.15" id="UAZ-d3-vTU"/>
                             <constraint firstItem="sVN-vj-dNd" firstAttribute="top" secondItem="t8L-tU-j7c" secondAttribute="bottom" id="VVe-Bj-Ddl"/>
                             <constraint firstAttribute="trailing" secondItem="umP-Wr-VhT" secondAttribute="trailing" id="Zqr-iI-l6l"/>
+                            <constraint firstItem="s2w-Sw-dA2" firstAttribute="top" secondItem="u7K-3E-2tq" secondAttribute="bottom" id="cqi-lK-nY7"/>
                             <constraint firstItem="umP-Wr-VhT" firstAttribute="leading" secondItem="iDu-jk-HBn" secondAttribute="leading" id="ixM-Fb-UcF"/>
+                            <constraint firstItem="u7K-3E-2tq" firstAttribute="top" secondItem="umP-Wr-VhT" secondAttribute="bottom" id="qsq-D3-OZK"/>
                             <constraint firstItem="4PS-Dg-iNS" firstAttribute="top" secondItem="t8L-tU-j7c" secondAttribute="bottom" id="r2F-Yi-fGJ"/>
                             <constraint firstAttribute="trailing" secondItem="sVN-vj-dNd" secondAttribute="trailing" id="zP6-6Y-aIS"/>
                         </constraints>
@@ -428,6 +443,7 @@
                         <outlet property="dayPickerCollection" destination="OSR-dk-3HD" id="Ay1-GA-J6t"/>
                         <outlet property="dayPickerView" destination="umP-Wr-VhT" id="WRc-He-eZD"/>
                         <outlet property="headerView" destination="4PS-Dg-iNS" id="Dyu-99-woc"/>
+                        <outlet property="taskTable" destination="u7K-3E-2tq" id="TxX-hP-e3A"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YJt-VL-SF1" userLabel="First Responder" sceneMemberID="firstResponder"/>
