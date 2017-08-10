@@ -29,15 +29,36 @@ class MainPageController: UIViewController, UICollectionViewDelegate, UICollecti
         
         setupViews()
         
-        for i in 0 ... 7 {
-            let newDay:Day = Day(timestamp: Calendar.current.date(byAdding: .day, value: i - 3, to: Date())!)
-            newDay.addTask(newTask: Task(description: "New Task", beginningTime: Date()))
-            days.append(newDay)
-            
-        }
+        
+        let newDay:Day = Day(timestamp: Calendar.current.date(byAdding: .day, value: 0, to: Date())!)
+        newDay.addTask(newTask: Task(description: "Meet With Jane", beginningTime: Date()))
+        days.append(newDay)
+        let newDay1:Day = Day(timestamp: Calendar.current.date(byAdding: .day, value: 1, to: Date())!)
+        newDay1.addTask(newTask: Task(description: "Grab Coffee With Jake", beginningTime: Date()))
+        days.append(newDay1)
+        let newDay2:Day = Day(timestamp: Calendar.current.date(byAdding: .day, value: 2, to: Date())!)
+        newDay2.addTask(newTask: Task(description: "Stand Ups With Nam Hee", beginningTime: Date()))
+        days.append(newDay2)
+        var newDay3:Day = Day(timestamp: Calendar.current.date(byAdding: .day, value: 3, to: Date())!)
+        newDay3.addTask(newTask: Task(description: "Investor Meeting with Chris", beginningTime: Date()))
+        days.append(newDay3)
+        
+        newDay3 = Day(timestamp: Calendar.current.date(byAdding: .day, value: 4, to: Date())!)
+        days.append(newDay3)
+        newDay3 = Day(timestamp: Calendar.current.date(byAdding: .day, value: 5, to: Date())!)
+        days.append(newDay3)
+        newDay3 = Day(timestamp: Calendar.current.date(byAdding: .day, value: 6, to: Date())!)
+        days.append(newDay3)
+        newDay3 = Day(timestamp: Calendar.current.date(byAdding: .day, value: 7, to: Date())!)
+        days.append(newDay3)
+
+        
+        
+       
         selectedDay = 3
         
         dayPickerCollection.reloadData()
+        taskTable.reloadData()
         
         
         
@@ -131,6 +152,7 @@ class MainPageController: UIViewController, UICollectionViewDelegate, UICollecti
         selectedDay = indexPath.row
         OperationQueue.main.addOperation {
             self.dayPickerCollection.reloadData()
+            self.taskTable.reloadData()
         }
     }
     
@@ -138,17 +160,18 @@ class MainPageController: UIViewController, UICollectionViewDelegate, UICollecti
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = Bundle.main.loadNibNamed("TaskCell", owner: self, options: nil)?.first as! TaskCell
         
+        let task:Task = days[selectedDay].Tasks[indexPath.row]
         
-        cell.taskName.text = "Meeting with Janett"
+        cell.taskName.text = task.Description
         cell.taskTime.text = "1 - 2pm"
         cell.userImage.image = #imageLiteral(resourceName: "profileImage")
-        cell.userImage.layer.cornerRadius  = cell.userImage.frame.width / 2
+        cell.userImage.layer.cornerRadius = cell.userImage.frame.width / 2
         return cell
     }
     
     @available(iOS 2.0, *)
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return days.count
+        return days[selectedDay].Tasks.count
     }
     
     
